@@ -4,7 +4,8 @@
 # Parte I. 
 
 **Respuesta 1:**
-echo $SHELL 
+'echo $SHELL'
+
 /bin/bash
 
 **Respuesta 2:**
