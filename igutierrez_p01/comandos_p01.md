@@ -4,15 +4,15 @@
 # Parte I. 
 
 **Respuesta 1:**
-'echo $SHELL'
+'''echo $SHELL'''
 
 /bin/bash
 
 **Respuesta 2:**
-mkdir data/ filtered/ raw_data/ meta/ scripts/ figures/ archive/
+'''mkdir data/ filtered/ raw_data/ meta/ scripts/ figures/ archive/'''
 
 **Respuesta 3:**
-mv filtered/ data && mv raw_data/ data
+'''mv filtered/ data && mv raw_data/ data'''
 
 **Respuesta 4:**
 Directorio | Función 
@@ -26,78 +26,83 @@ Directorio | Función
 # Parte II. 
 
 **Respuesta 1:**
-chmod u+x delay.sh
+'''chmod u+x delay.sh'''
 
 **Respuesta 2:**
-ls -l
-./delay.sh
+'''ls -l'''
+'''./delay.sh'''
 
 **Respuesta 3:**
-'#! /bin/bash
+'''
+#! /bin/bash
 echo "Después de la Parte I. necesito un descanso de exactamente 30 segundos."
 sleep 30
-echo "Ya puedo continuar"'
+echo "Ya puedo continuar"
+'''
 
 **Respuesta 4:**
-./delay.sh &
-kill -9 47808
+'''./delay.sh &'''
+'''kill -9 47808'''
 
 # Parte III. 
 
 **Respuesta 1:**
-wc -w SarsCov-2.txt
+'''wc -w SarsCov-2.txt'''
 
 **Respuesta 2:**
-mv /home/isaias/Descargas/sequence.fasta sarscov2_genome.fasta
-mv /home/isaias/Descargas/sequence.fasta splike_c.faa
+'''mv /home/isaias/Descargas/sequence.fasta sarscov2_genome.fasta'''
+'''mv /home/isaias/Descargas/sequence.fasta splike_c.faa'''
 
 # Parte IV. 
 
 **Respuesta 1:**
-ln -s ~/../raw_data/splike_c.faa
-ln -s ~/../raw_data/splike_b.faa
-ln -s ~/../raw_data/splike_a.faa
+'''ln -s ~/../raw_data/splike_c.faa'''
+'''ln -s ~/../raw_data/splike_b.faa'''
+'''ln -s ~/../raw_data/splike_a.faa'''
 
 **Respuesta 2:**
 
-touch glycoproteins.faa
+'''touch glycoproteins.faa'''
 
 **Respuesta 3:**
-head -n1 splike_a.faa >> ../filtered/glycoproteins.faa
+'''head -n1 splike_a.faa >> ../filtered/glycoproteins.faa'''
 >pdb|6VXX|A Chain A, SARS-CoV-2 spike glycoprotein
 >pdb|6VXX|B Chain B, SARS-CoV-2 spike glycoprotein
 >pdb|6VXX|C Chain C, SARS-CoV-2 spike glycoprotein
 
 **Respuesta 4:**
 
-less splike_c.faa >> ../filtered/glycoproteins.faa
+'''less splike_c.faa >> ../filtered/glycoproteins.faa'''
 
 **Respuesta 5:**
-mv splike_c.faa ../../archive/
+
+'''mv splike_c.faa ../../archive/'''
 
 **Respuesta 6:**
-head -n3 sarscov2_genome.fasta
+'''head -n3 sarscov2_genome.fasta'''
 
 >NC_045512.2 Severe acute respiratory syndrome coronavirus 2 isolate Wuhan-Hu-1, complete genome
 ATTAAAGGTTTATACCTTCCCAGGTAACAAACCAACCAACTTTCGATCTCTTGTAGATCTGTTCTCTAAA
 CGAACTTTAAAATCTGTGTGGCTGTCACTCGGCTGCATGCTTAGTGCACTCACGCAGTATAATTAATAAC
 
-zless sarscov2_assembly.fasta.gz | head -n3
+'''zless sarscov2_assembly.fasta.gz | head -n3'''
 
 >NODE_1_length_264_cov_161.042781
 CACAAATCTTAACACTCTTCCCTACACGACGCTCTTCCGATCTACGCCGGGCCATTCGTA
 CGAACCGATACCTGTGGTAAAGGGTCCTACTGTATGGTGGTACACGAGTAGTAGCAAATG
 
 **Respuesta 7:**
-grep '>' sarscov2_genome.fasta | wc -l
+'''grep '>' sarscov2_genome.fasta | wc -l'''
+
 1 
 
-zless sarscov2_assembly.fasta.gz | grep '>' | wc -l
+'''zless sarscov2_assembly.fasta.gz | grep '>' | wc -l'''
+
 35
 
 **Respuesta 8:**
 
-zless SRR10971381_R2.fastq.gz | head -n12
+'''zless SRR10971381_R2.fastq.gz | head -n12'''
 @SRR10971381.512_2
 CGTGGAGTATGGCTACATACTACTTATTTGATGAGTCTGGTGAGTTTAAAGTGGCTTCACATATGTATTGTTCTTTCTACCCTCCAGATGAGGATGAAGAAGAAGGTGATTGTGAAGAAGAAGAGTTTGAGCCATCAACTCAATATGAGT
 +
@@ -111,7 +116,7 @@ AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 +
 FFFFFFFFFFFFAFFFAFFFFFF6A//F//FFF
 
-zless SRR10971381_R2.fastq.gz | grep '@' | wc -l
+'''zless SRR10971381_R2.fastq.gz | grep '@' | wc -l'''
 130022
 
 **Respuesta 9:**
@@ -122,7 +127,7 @@ La diferencia es que con el comando -S muestra las lineas completas, además que
 
 **Respuesta 11:**
 
-less -S sarscov2_genome.gff3 | cut -f3 | grep 'gene' | wc -l
+'''less -S sarscov2_genome.gff3 | cut -f3 | grep 'gene' | wc -l'''
 11
 
 Los CDS son las porciones que se codifican de un gen para una proteína. 
