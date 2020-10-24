@@ -123,3 +123,6 @@ La diferencia es que con el comando -S muestra las lineas completas, además que
 
 less -S sarscov2_genome.gff3 | cut -f3 | grep 'gene' | wc -l
 11
+
+Los CDS son las porciones que se codifican de un gen para una proteína. 
+
