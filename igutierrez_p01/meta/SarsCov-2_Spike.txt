@@ -1,0 +1,2 @@
+Función de la proteína S de SARS-CoV 2
+Esta proteína se conforma por dos dominios principalmente, entre los que se encuentran el dominio S1 N-terminal (S1-NTD) y el dominio C terminal (S1-CTD). Estos dominios potencialmente se unen a receptores y funcionan como el dominio de union al receptor (RBD). Los S1-NTD son responsables para unir azúcar y el S1-CTD son responsables de reconocer los receptores de proteínas ACE2, APN y DPP4. 

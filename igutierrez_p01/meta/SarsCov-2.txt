@@ -1,0 +1,3 @@
+SARS-CoV 2 
+Este virus pertenece a la familia Coronaviridae. Su secuencia fue secuenciada por muestras de pacientes en china. Dando pauta para el desarrollo de pruebas diagnosticas. De los dominios a resaltar se encuentra el S, el cual pertenece a la proteína S, siendo un factor determinante para la infección a la células de los pulmones principalmente. Su estructura esta determinada por la glicoproteína de membrana (M), la nucleocápside (N), proteína espículada glicosilada (S) entre otras con un tamaño de 50-200 nm. La porteína S se diibe en el domininio S1 y S2, de los cuales la S1 es la que se une al receptores de las células del tejido nervioso, respiratorio o intestinal. 
+Para el desarrollo de la vacuna hay varios metodos, como la atenuación. 
