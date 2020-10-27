@@ -98,6 +98,8 @@ CGAACCGATACCTGTGGTAAAGGGTCCTACTGTATGGTGGTACACGAGTAGTAGCAAATG
 
 
 La razón por lo que tiene una diferencia tan grande en las secuencias, siendo que el archivo genome.fasta tiene aproximadamente 30429 caracteres y el archivo assembly.fasta 3749 (ambos casos sin haber quitado los saltos de linea) es que el archivo assembly tiene diferentes segmentos del genoma, debido al posible tratamiento para facilitar su secuenciación. Para después ser ensamblados y llegar al genoma total del organismo. 
+
+
 **Respuesta 7:**
 ```grep '>' sarscov2_genome.fasta | wc -l```
 
